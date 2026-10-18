@@ -1,38 +1,23 @@
 ---
 title: 初めてのブログ
+tags:
+  - 随笔
+categories:
+  - 生活
 ---
-Welcome to [Hexo](https://hexo.io/)! This is your very first post. Check [documentation](https://hexo.io/docs/) for more info. If you get any problems when using Hexo, you can find the answer in [troubleshooting](https://hexo.io/docs/troubleshooting.html) or you can ask me on [GitHub](https://github.com/hexojs/hexo/issues).
 
-## Quick Start
+## about me
 
-### Create a new post
+1，大连理工在读（大连离婚大学）
+2，目标是全栈工程师！
 
-``` bash
-你好
-```
+## my project
+正在开发一个claude桌宠，用c++和qt实现
 
-More info: [Writing](https://hexo.io/docs/writing.html)
-
-### Running on github
+## Running on github
 
 ``` bash
 $ whywhy1352.github.io
 ```
-
-More info: [Server](https://hexo.io/docs/server.html)
-
-### Generate static files
-
-``` bash
-$ hexo generate
-```
-
-More info: [Generating](https://hexo.io/docs/generating.html)
-
-### Deploy to remote sites
-
-``` bash
-$ hexo deploy
-```
-
-More info: [Deployment](https://hexo.io/docs/one-command-deployment.html)
+## today
+10/17

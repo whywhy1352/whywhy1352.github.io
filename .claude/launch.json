@@ -1,0 +1,11 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "hexo",
+      "runtimeExecutable": "npx",
+      "runtimeArgs": ["hexo", "server"],
+      "port": 4000
+    }
+  ]
+}
