@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <author>
+    <name>why</name>
+  </author>
+  <generator uri="https://hexo.io/">Hexo</generator>
+  <id>https://whywhy1352.github.io/</id>
+  <link href="https://whywhy1352.github.io/" rel="alternate"/>
+  <link href="https://whywhy1352.github.io/atom.xml" rel="self"/>
+  <rights>All rights reserved 2026, why</rights>
+  <subtitle>记录 · 分享 · 成长</subtitle>
+  <title>why 的小站</title>
+  <updated>2026-10-18T08:02:18.255Z</updated>
+  <entry>
+    <author>
+      <name>why</name>
+    </author>
+    <category term="生活" scheme="https://whywhy1352.github.io/categories/%E7%94%9F%E6%B4%BB/"/>
+    <category term="随笔" scheme="https://whywhy1352.github.io/tags/%E9%9A%8F%E7%AC%94/"/>
+    <content>
+      <![CDATA[<h2 id="about-me"><a href="#about-me" class="headerlink" title="about me"></a>about me</h2><p>1，大连理工在读（大连离婚大学）<br>2，目标是全栈工程师！</p><h2 id="my-project"><a href="#my-project" class="headerlink" title="my project"></a>my project</h2><p>正在开发一个claude桌宠，用c++和qt实现</p><h2 id="Running-on-github"><a href="#Running-on-github" class="headerlink" title="Running on github"></a>Running on github</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ whywhy1352.github.io</span><br></pre></td></tr></table></figure><h2 id="today"><a href="#today" class="headerlink" title="today"></a>today</h2><p>10&#x2F;17</p>]]>
+    </content>
+    <id>https://whywhy1352.github.io/2026/10/17/hello-world/</id>
+    <link href="https://whywhy1352.github.io/2026/10/17/hello-world/"/>
+    <published>2026-10-17T07:40:00.224Z</published>
+    <summary>
+      <![CDATA[<h2 id="about-me"><a href="#about-me" class="headerlink" title="about me"></a>about me</h2><p>1，大连理工在读（大连离婚大学）<br>2，目标是全栈工程师！</p>
+<h2 id="my]]>
+    </summary>
+    <title>初めてのブログ</title>
+    <updated>2026-10-18T08:02:18.255Z</updated>
+  </entry>
+</feed>
