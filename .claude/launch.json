@@ -6,6 +6,12 @@
       "runtimeExecutable": "npx",
       "runtimeArgs": ["hexo", "server"],
       "port": 4000
+    },
+    {
+      "name": "hexo-draft",
+      "runtimeExecutable": "npx",
+      "runtimeArgs": ["hexo", "server", "--draft"],
+      "port": 4000
     }
   ]
 }

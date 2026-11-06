@@ -113,6 +113,14 @@ feed:
   path: atom.xml
   limit: 20
 
+# Markdown 渲染（hexo-renderer-markdown-it）+ KaTeX 公式
+markdown:
+  render:
+    # 关掉排版替换，避免 (c)、(r) 这类选项被换成 ©、®
+    typographer: false
+  plugins:
+    - '@renbaoshuo/markdown-it-katex'
+
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:

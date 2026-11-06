@@ -1,0 +1,118 @@
+/* 康奈尔笔记排版：左线索栏 .cue，右笔记栏 .note，底部总结栏 .cornell-summary */
+
+.cornell,
+.cornell-summary {
+  --cornell-line: #d6dde6;
+  --cornell-cue: #6c7a89;
+  --cornell-accent: #49b1f5;
+  --cornell-tint: rgba(73, 177, 245, .07);
+  --cornell-red: #e5484d;
+}
+
+[data-theme="dark"] .cornell,
+[data-theme="dark"] .cornell-summary {
+  --cornell-line: #3b424c;
+  --cornell-cue: #a3adb8;
+  --cornell-tint: rgba(73, 177, 245, .1);
+  --cornell-red: #ff6b6b;
+}
+
+.cornell {
+  display: grid;
+  grid-template-columns: minmax(8em, 28%) minmax(0, 1fr);
+  margin: 1em 0;
+  border-top: 2px solid var(--cornell-line);
+  border-bottom: 2px solid var(--cornell-line);
+}
+
+.cornell > .cue,
+.cornell > .note {
+  min-width: 0;
+  padding: .7em 0;
+}
+
+/* 每一行线索和笔记之间的分隔线 */
+.cornell > .cue:not(:first-child),
+.cornell > .cue:not(:first-child) + .note {
+  border-top: 1px dashed var(--cornell-line);
+}
+
+.cornell > .cue {
+  padding-right: 1em;
+  border-right: 2px solid var(--cornell-line);
+  color: var(--cornell-cue);
+  font-size: .9em;
+  line-height: 1.7;
+}
+
+.cornell > .note {
+  padding-left: 1.2em;
+}
+
+.cornell > div > :first-child {
+  margin-top: 0;
+}
+
+.cornell > div > :last-child {
+  margin-bottom: 0;
+}
+
+/* 长公式在栏内横向滚动，不撑破版面 */
+.cornell .katex-display {
+  margin: .6em 0;
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+
+/* 红笔：订正和补充 */
+.cornell .red,
+.cornell-summary .red {
+  color: var(--cornell-red);
+}
+
+.cornell-summary {
+  margin: 0 0 1.5em;
+  padding: .8em 1.2em;
+  border-left: 4px solid var(--cornell-accent);
+  background: var(--cornell-tint);
+}
+
+.cornell-summary > :first-child {
+  margin-top: 0;
+}
+
+.cornell-summary > :last-child {
+  margin-bottom: 0;
+}
+
+/* 手机上改成上下排列，线索放在对应笔记的上方 */
+@media (max-width: 768px) {
+  .cornell {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .cornell > .cue:not(:first-child),
+  .cornell > .cue:not(:first-child) + .note {
+    border-top: 0;
+  }
+
+  .cornell > .note:not(:last-child) {
+    border-bottom: 1px dashed var(--cornell-line);
+  }
+
+  .cornell > .cue {
+    margin-top: .7em;
+    padding: .45em .8em;
+    border-right: 0;
+    border-left: 3px solid var(--cornell-accent);
+    background: var(--cornell-tint);
+  }
+
+  .cornell > .cue:empty {
+    display: none;
+  }
+
+  .cornell > .note {
+    padding-left: 0;
+  }
+}
