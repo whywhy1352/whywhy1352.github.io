@@ -1,0 +1,5 @@
+{
+  // 让 VS Code 的 Markdown 预览和博客一致：加载康奈尔笔记排版样式，单个换行也换行
+  "markdown.styles": ["source/css/cornell.css"],
+  "markdown.preview.breaks": true
+}

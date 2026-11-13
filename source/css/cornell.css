@@ -9,8 +9,11 @@
   --cornell-red: #e5484d;
 }
 
+/* 深色：博客跟随 Butterfly 的开关，VS Code 预览跟随编辑器主题 */
 [data-theme="dark"] .cornell,
-[data-theme="dark"] .cornell-summary {
+[data-theme="dark"] .cornell-summary,
+.vscode-dark .cornell,
+.vscode-dark .cornell-summary {
   --cornell-line: #3b424c;
   --cornell-cue: #a3adb8;
   --cornell-tint: rgba(73, 177, 245, .1);
@@ -62,6 +65,16 @@
   margin: .6em 0;
   overflow-x: auto;
   overflow-y: hidden;
+}
+
+/* 线索栏里的代码块：去掉行号并自动换行，避免横向滚动 */
+.cornell > .cue figure.highlight .gutter {
+  display: none;
+}
+
+.cornell > .cue figure.highlight pre {
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
 }
 
 /* 红笔：订正和补充 */
